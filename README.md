@@ -8,35 +8,41 @@ Music recommendation systems are a cornerstone of modern entertainment applicati
 
 # The primary technologies used include:
 
-LangChain: A framework for building multi-agentic RAG systems.
+## LangChain: 
+A framework for building multi-agentic RAG systems.
 
-Chroma: A high-performance vector database for storing and querying song embeddings.
+## Chroma: 
+A high-performance vector database for storing and querying song embeddings.
 
+## 
 Llama2 (7B-chat-hf): A powerful open-source language model used for inference.
 
 # System Architecture
 
 The project implements a three-agent system:
 
-1. Song Analysis Agent
+## 1. Song Analysis Agent
 
 This agent analyzes the initial song's characteristics (e.g., tempo, energy, danceability) and queries the vector database to fetch similar songs.
 
-2. Song Recommendation Agent
+## 2. Song Recommendation Agent
 
 Given the context of the current song and the options retrieved by the Song Analysis Agent, this agent uses Llama2 to recommend the most suitable next song for the jamming session.
 
-3. Validation and Feedback Agent
+## 3. Validation and Feedback Agent
 
 This agent validates the recommended song against the session's context, user preferences, and history. If the recommendation is unsuitable, it suggests an alternative.
 
 # Features
 
-Dynamic Recommendation Loop: The system runs in a continuous loop, dynamically analyzing, recommending, and validating songs.
+## Dynamic Recommendation Loop:
+The system runs in a continuous loop, dynamically analyzing, recommending, and validating songs.
 
-Context Awareness: Maintains a session history to avoid repetitive or unsuitable recommendations.
+## Context Awareness: 
+Maintains a session history to avoid repetitive or unsuitable recommendations.
 
-Modular Design: Agents are implemented as independent modules for flexibility and scalability.
+## Modular Design: 
+Agents are implemented as independent modules for flexibility and scalability.
 
 # Workflow
 
@@ -50,23 +56,16 @@ Validation and Feedback Agent ensures the recommendation aligns with the session
 
 Repeat for subsequent songs, maintaining a session history.
 
-# Key Technologies
-
-LangChain: Used to build the multi-agentic workflow and integrate the RAG system.
-
-Chroma: Serves as the vector store for song embeddings.
-
-Llama2: Provides inference for agent decisions and recommendations.
-
-Sentence Transformers: Used to generate embeddings for songs based on their characteristics.
-
 # Future Work
 
-Enhance Embeddings: Experiment with advanced embeddings for richer song representations.
+## Enhance Embeddings: 
+Experiment with advanced embeddings for richer song representations.
 
-Additional Agents: Introduce agents for mood detection and genre exploration.
+## Additional Agents: 
+Introduce agents for mood detection and genre exploration.
 
-Cross-Platform Integration: Adapt the system for real-time use in music streaming services.
+## Cross-Platform Integration: 
+Adapt the system for real-time use in music streaming services.
 
 # Contributing
 
